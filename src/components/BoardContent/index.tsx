@@ -1,5 +1,5 @@
 function BoardContent() {
-  return <div className="bg-colorBoardContent">BoardContent</div>
+  return <div className="bg-colorBoardContent h-boardContent">BoardContent</div>
 }
 
 export default BoardContent

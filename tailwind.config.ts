@@ -1,6 +1,9 @@
 const { nextui } = require("@nextui-org/react")
 import type { Config } from "tailwindcss"
 
+const HEADER_HEIGHT = '70px'
+const BOARDBAR_HEIGHT = '80px'
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,7 +12,13 @@ const config: Config = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    height: {
+      header: HEADER_HEIGHT,
+      boardBar: BOARDBAR_HEIGHT,
+      boardContent: `calc(100vh - (${HEADER_HEIGHT} + ${BOARDBAR_HEIGHT}))`,
+    },
+  },
   darkMode: "class",
   plugins: [ nextui({
     themes: {
@@ -34,4 +43,6 @@ const config: Config = {
     },
   }),],
 }
+
+
 export default config
