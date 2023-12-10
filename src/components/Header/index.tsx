@@ -7,7 +7,7 @@ import HelpIcon from "../Icons"
 function Header() {
   const listExpandButton = [{ title: "Workspaces" }, { title: "Recent" }, { title: "Starred" }, { title: "Templates" }]
   return (
-    <header className="flex items-center justify-between px-2 h-12 bg-colorHeader text-primary overflow-x-auto">
+    <header className="flex items-center justify-between px-2 h-header bg-colorHeader text-primary overflow-x-auto">
       <div className="flex items-center">
         <div className="flex items-center gap-4">
           <Element size={24} />
