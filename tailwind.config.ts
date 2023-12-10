@@ -15,10 +15,20 @@ const config: Config = {
     themes: {
       light: {
         colors: {
+          colorHeader:'#294ac4',
+          colorBoardBar:"#305cda",
+          colorBoardContent:'#305bda',
+          primary:'#fff',
+          primary2:'#292D32'
         },
       },
       dark: {
         colors: {
+          colorHeader:'#294ac4',
+          colorBoardBar:"#305cda",
+          colorBoardContent:'#305bda',
+          primary:'#292D32',
+          primary2:'#fff',
         },
       },
     },

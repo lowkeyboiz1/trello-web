@@ -1,5 +1,5 @@
 function BoardBar() {
-  return <div className="bg-[#86efac]">BoardBar</div>
+  return <div className="bg-colorBoardBar">BoardBar</div>
 }
 
 export default BoardBar
